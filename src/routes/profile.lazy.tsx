@@ -1,4 +1,5 @@
 import { createLazyFileRoute } from "@tanstack/react-router";
+import { ProfileCard } from "@/components/profile-card.tsx";
 
 export const Route = createLazyFileRoute("/profile")({
   component: Profile,
@@ -7,7 +8,7 @@ export const Route = createLazyFileRoute("/profile")({
 function Profile() {
   return (
     <div>
-      <h1>Profile</h1>
+      <ProfileCard />
     </div>
   );
 }

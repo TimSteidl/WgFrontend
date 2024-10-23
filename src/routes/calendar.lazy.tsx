@@ -1,4 +1,5 @@
 import { createLazyFileRoute } from "@tanstack/react-router";
+import { EnhancedCalendar } from "@/components/enhanced-calendar.tsx";
 
 export const Route = createLazyFileRoute("/calendar")({
   component: Calendar,
@@ -7,7 +8,7 @@ export const Route = createLazyFileRoute("/calendar")({
 function Calendar() {
   return (
     <div>
-      <h1>Calendar</h1>
+      <EnhancedCalendar />
     </div>
   );
 }

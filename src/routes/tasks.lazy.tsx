@@ -1,4 +1,5 @@
 import { createLazyFileRoute } from "@tanstack/react-router";
+import { KanbanPage } from "@/components/kanban-page.tsx";
 
 export const Route = createLazyFileRoute("/tasks")({
   component: Tasks,
@@ -7,7 +8,7 @@ export const Route = createLazyFileRoute("/tasks")({
 function Tasks() {
   return (
     <div>
-      <h1>Tasks</h1>
+      <KanbanPage />
     </div>
   );
 }
